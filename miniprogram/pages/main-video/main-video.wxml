@@ -1,0 +1,7 @@
+<!--pages/main-video/main-video.wxml-->
+<!-- <text>pages/main-video/main-video.wxml</text> -->
+<view class="video-list">
+    <view class="item" wx:for="{{vedioList}}" wx:key="id">
+        <video-item itemData="{{item}}"></video-item>
+    </view>
+</view>

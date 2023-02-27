@@ -1,0 +1,22 @@
+<!--pages/detail-video/detail-video.wxml-->
+<!-- <text>pages/detail-video/detail-video.wxml</text> -->
+  <!-- danmu-list="{{danmuList}}" -->
+<video 
+  class="video" 
+  src="{{mvUrl}}" 
+  autoplay
+  referrer-policy="origin"
+/>
+<scroll-view class="content" scroll-y>
+  <view class="info">
+    <view>{{mvInfo.name}}-{{ mvInfo.artistName }}</view>
+  </view>
+  <view class="related-video">
+    <block wx:for="{{relatedVideo}}" wx:key="vid">
+      <view class="item">
+        <image src="{{item.coverUrl}}" mode="widthFix"></image>
+        <view>{{item.title}}</view>
+      </view>
+    </block>
+  </view>
+</scroll-view>
