@@ -1,11 +1,11 @@
-// pages/main-music/main-music.ts
+// pages/detail-search/detail-search.ts
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-
+        searchValue:'',
     },
 
     /**

@@ -1,0 +1,3 @@
+<!--pages/detail-search/detail-search.wxml-->
+<!-- <text>pages/detail-search/detail-search.wxml</text> -->
+<van-search value="{{ searchValue }}" shape="round" background="#fafafa" placeholder="请输入搜索关键词"></van-search>
