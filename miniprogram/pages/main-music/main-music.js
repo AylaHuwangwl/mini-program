@@ -1,6 +1,8 @@
 // pages/main-music/main-music.ts
 import { getMusicBanner, getSongMenuList } from "../../services/music"
 import querySelect from "../../utils/query-select"
+import throttle from '../../utils/throttle'
+const querySelectThrottle = throttle(querySelect,100)
 Page({
 
     /**
@@ -25,8 +27,9 @@ Page({
     onSearchClick() {
         wx.navigateTo({url: '/pages/detail-search/detail-search'})
       },
+    //   不节流的话该方法会执行8次
     onBannerImageLoad(event) {
-        querySelect(".banner-image").then(res => {
+        querySelectThrottle(".banner-image").then(res => {
           this.setData({ bannerHeight: res[0].height })
         })
       },

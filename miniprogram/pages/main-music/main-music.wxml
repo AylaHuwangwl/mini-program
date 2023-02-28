@@ -6,6 +6,7 @@
 <swiper class="banner" circular indicator-dots style="height:{{bannerHeight}}px" wx-if="{{banners.length}}">
     <block wx:for="{{banners}}" wx:key="targetId">
     <swiper-item class="item">
+    <!-- onBannerImageLoad:图片加载完毕调用的方法 -->
       <image 
         class="banner-image" 
         src="{{item.imageUrl}}" 
@@ -15,3 +16,5 @@
     </swiper-item>
   </block>
 </swiper>
+<!--  -->
+<area-header />
