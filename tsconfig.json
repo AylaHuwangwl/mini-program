@@ -23,7 +23,7 @@
   },
   "include": [
     "./**/*.ts"
-, "miniprogram/pages/detail-video/detail-video.js", "miniprogram/components/video-item/video-item.js", "miniprogram/pages/main-video/main-video.js", "miniprogram/app.js", "miniprogram/pages/main-music/main-music.js", "miniprogram/pages/detail-search/detail-search.js", "miniprogram/components/area-header/area-header.js"  ],
+, "miniprogram/pages/detail-video/detail-video.js", "miniprogram/components/video-item/video-item.js", "miniprogram/pages/main-video/main-video.js", "miniprogram/app.js", "miniprogram/pages/main-music/main-music.js", "miniprogram/pages/detail-search/detail-search.js", "miniprogram/components/area-header/area-header.js", "miniprogram/components/song-item-v1/song-item-v.js", "miniprogram/pages/detail-song/detail-song.js", "miniprogram/components/menu-item/menu-item.js", "miniprogram/components/menu-area/menu-area.js", "miniprogram/pages/detail-menu/detail-menu.js", "miniprogram/components/ranking-item/ranking-item.js"  ],
   "exclude": [
     "node_modules"
   ]

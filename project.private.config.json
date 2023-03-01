@@ -22,6 +22,20 @@
                     "query": "",
                     "launchMode": "default",
                     "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/main-music/main-music",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/detail-menu/detail-menu",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
                 }
             ]
         }
