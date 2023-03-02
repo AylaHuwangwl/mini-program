@@ -13,15 +13,15 @@ const rankingStore = new HYEventStore({
     newRanking: {},
     upRanking: {}
   },
-  action:{
-    fetchRankingDataAction(){
-      for (const key in rankingsMap) {
-        const id = rankingsMap[key]
-        getPlaylistDetail(id).then(res => {
-          ctx[key] = res.playlist
-        })
+  actions:{
+    fetchRankingDataAction(ctx) {
+        for (const key in rankingsMap) {
+          const id = rankingsMap[key]
+          getPlaylistDetail(id).then(res => {
+            ctx[key] = res.playlist
+          })
+        }
       }
-    },
   }
 })
 export default rankingStore

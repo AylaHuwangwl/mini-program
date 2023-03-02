@@ -14,15 +14,19 @@ Component({
      * 组件的初始数据
      */
     data: {
-        onSongItemTap(){
-            // const id = this.properties.itemData.id
-        }
+       
     },
 
     /**
      * 组件的方法列表
      */
     methods: {
-
+        onSongItemTap(){
+            const id = this.properties.itemData.id
+            console.log(id);
+            wx.navigateTo({
+              url: `/pages/music-player/music-player?id=${id}`,
+            })
+        }
     }
 })

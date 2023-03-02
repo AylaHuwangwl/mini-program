@@ -21,6 +21,11 @@ Component({
      * 组件的方法列表
      */
     methods: {
-      onMenuItemTap(){}
+      onMenuItemTap(){
+        const id = this.properties.itemData.id
+        wx.navigateTo({
+          url: `/pages/detail-song/detail-song?type=menu&id=${id}`,
+        })
+      }
     }
 })

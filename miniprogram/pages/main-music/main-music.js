@@ -48,7 +48,6 @@ Page({
     },
     async fetchSongMenuList(){
       getSongMenuList().then(res => {
-        console.log(res);
         this.setData({ hotMenuList: res.playlists })
       })
       getSongMenuList("华语").then(res => {
